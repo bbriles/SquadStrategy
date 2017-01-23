@@ -1,0 +1,7 @@
+*.suo
+SquadStrategy/bin/
+SquadStrategy/.vs/
+SquadStrategy/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+SquadStrategy/obj/
+SquadStrategy/Game.js
+*.map
