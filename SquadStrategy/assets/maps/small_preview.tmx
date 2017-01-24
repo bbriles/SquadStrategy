@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="5" height="5" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="rogue_tiles" tilewidth="32" tileheight="32" spacing="2" tilecount="1425" columns="57">
+  <image source="../sprites/roguelikeSheet_big.png" width="1936" height="850"/>
+ </tileset>
+ <layer name="ground" width="5" height="5">
+  <data encoding="csv">
+6,6,6,63,6,
+6,6,6,6,63,
+6,63,6,6,6,
+6,6,6,6,6,
+63,63,6,6,6
+</data>
+ </layer>
+ <layer name="ground_overlay" width="5" height="5">
+  <data encoding="csv">
+1,62,0,0,0,
+58,119,0,0,0,
+119,0,0,521,522,
+0,0,521,579,579,
+0,0,578,579,579
+</data>
+ </layer>
+ <layer name="objects" width="5" height="5">
+  <data encoding="csv">
+0,1080,966,0,537,
+0,0,0,0,0,
+0,471,0,0,650,
+530,0,0,617,618,
+530,530,593,674,675
+</data>
+ </layer>
+</map>

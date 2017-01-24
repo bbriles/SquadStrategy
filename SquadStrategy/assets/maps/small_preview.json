@@ -1,0 +1,57 @@
+{ "height":5,
+ "layers":[
+        {
+         "data":[6, 6, 6, 63, 6, 6, 6, 6, 6, 63, 6, 63, 6, 6, 6, 6, 6, 6, 6, 6, 63, 63, 6, 6, 6],
+         "height":5,
+         "name":"ground",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":5,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "data":[1, 62, 0, 0, 0, 58, 119, 0, 0, 0, 119, 0, 0, 521, 522, 0, 0, 521, 579, 579, 0, 0, 578, 579, 579],
+         "height":5,
+         "name":"ground_overlay",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":5,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "data":[0, 1080, 966, 0, 537, 0, 0, 0, 0, 0, 0, 471, 0, 0, 650, 530, 0, 0, 617, 618, 530, 530, 593, 674, 675],
+         "height":5,
+         "name":"objects",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":5,
+         "x":0,
+         "y":0
+        }],
+ "nextobjectid":1,
+ "orientation":"orthogonal",
+ "renderorder":"right-down",
+ "tileheight":32,
+ "tilesets":[
+        {
+         "columns":57,
+         "firstgid":1,
+         "image":"..\/sprites\/roguelikeSheet_big.png",
+         "imageheight":850,
+         "imagewidth":1936,
+         "margin":0,
+         "name":"rogue_tiles",
+         "spacing":2,
+         "tilecount":1425,
+         "tileheight":32,
+         "tilewidth":32
+        }],
+ "tilewidth":32,
+ "version":1,
+ "width":5
+}

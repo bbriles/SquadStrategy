@@ -5,3 +5,21 @@
 span {
     font-style: italic;
 }
+
+.offScreen {
+    display:none;
+    position: absolute;
+    width:600px;
+    left:320px;
+} 
+
+.onScreen{ 
+    display:block;
+    position: absolute;
+    width:405px;
+    height: 180px;
+    left:370px;
+    top:345px;
+    padding: 0px;
+    margin: 0px;
+}
