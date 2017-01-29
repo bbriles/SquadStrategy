@@ -141,46 +141,11 @@
             var validFrames: Array<number> = [];
             var index: number;
 
-            index  = 6;
-            for (var i: number = 0; i < 10; i++) {
-                for (var j: number = 6; j < 18; j++) {
-                    validFrames.push(index);
-                    index++;
-                }
-                index += 54 - 12;
-            }  
-            index = 3;
-            for (var i: number = 0; i < 10; i++) {
-                for (var j: number = 3; j < 5; j++) {
-                    validFrames.push(index);
-                    index++;
-                }
-                index += 52;
-            }
-            index = 19;
-            for (var i: number = 0; i < 12; i++) {
-                for (var j: number = 19; j < 23; j++) {
-                    validFrames.push(index);
-                    index++;
-                }
-                index += 50;
-            }
-            index = 23;
-            for (var i: number = 0; i < 8; i++) {
-                for (var j: number = 23; j < 27; j++) {
-                    validFrames.push(index);
-                    index++;
-                }
-                index += 50;
-            }
-            index = 28;
-            for (var i: number = 0; i < 9; i++) {
-                for (var j: number = 28; j < 32; j++) {
-                    validFrames.push(index);
-                    index++;
-                }
-                index += 50;
-            }
+            this.addFrameArea(validFrames, 6, 12, 10);
+            this.addFrameArea(validFrames, 3, 2, 10);
+            this.addFrameArea(validFrames, 19, 4, 12);
+            this.addFrameArea(validFrames, 23, 4, 8);
+            this.addFrameArea(validFrames, 28, 4, 10);
 
             for (var i: number = 0; i < validFrames.length; i++) {
                 var sprite: Phaser.Sprite = new Phaser.Sprite(this.game, x, y, "characters", validFrames[i]);
@@ -200,31 +165,10 @@
             x = 42;
             y = 16;
 
-            index = 33;
-            for (var i: number = 0; i < 9; i++) {
-                for (var j: number = 33; j < 41; j++) {
-                    validFrames.push(index);
-                    index++;
-                }
-                index += 46;
-            }
-            index = 42;
-            for (var i: number = 0; i < 10; i++) {
-                for (var j: number = 42; j < 52; j++) {
-                    validFrames.push(index);
-                    index++;
-                }
-                index += 44;
-            }
-            index = 52;
-            for (var i: number = 0; i < 5; i++) {
-                for (var j: number = 52; j < 54; j++) {
-                    validFrames.push(index);
-                    index++;
-                }
-                index += 52;
-            }
-
+            this.addFrameArea(validFrames, 33, 8, 9);
+            this.addFrameArea(validFrames, 42, 10, 10);
+            this.addFrameArea(validFrames, 52, 2, 5);
+            
             for (var i: number = 0; i < validFrames.length; i++) {
                 var sprite: Phaser.Sprite = new Phaser.Sprite(this.game, x, y, "characters", validFrames[i]);
                 sprite.anchor.setTo(0.5, 0.5);
@@ -238,6 +182,17 @@
                     x = 42;
                     y += 35;
                 }
+            }
+        }
+
+        addFrameArea(frames: Array<number>, startFrame: number, cols: number, rows: number) {
+            var index:number  = startFrame;
+            for (var i: number = 0; i < rows; i++) {
+                for (var j: number = 0; j < cols; j++) {
+                    frames.push(index);
+                    index++;
+                }
+                index += 54 - cols;
             }
         }
 
