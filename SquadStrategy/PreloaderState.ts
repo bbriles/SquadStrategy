@@ -9,6 +9,8 @@
             this.game.load.spritesheet("tiles", "assets/sprites/roguelikeSheet_big.png", 32, 32, 2000, 0, 2);
 
             this.game.load.tilemap("small_preview", "assets/maps/small_preview.json", null, Phaser.Tilemap.TILED_JSON);
+            this.game.load.tilemap("map1", "assets/maps/lake_camp.json", null, Phaser.Tilemap.TILED_JSON);
+
         }
 
         create() {
@@ -16,7 +18,7 @@
         }
 
         startMainMenu() {
-            this.game.state.start('CharacterCreator', true, false);
+            this.game.state.start('Game', true, false);
         }
     }
 }

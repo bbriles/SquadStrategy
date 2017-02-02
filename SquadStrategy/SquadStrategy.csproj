@@ -43,8 +43,11 @@
     <TypeScriptCompile Include="lib\phaser.d.ts" />
     <TypeScriptCompile Include="lib\pixi.d.ts" />
     <TypeScriptCompile Include="MainMenuState.ts" />
+    <TypeScriptCompile Include="Map.ts" />
     <TypeScriptCompile Include="PreloaderState.ts" />
     <TypeScriptCompile Include="SimpleButton.ts" />
+    <TypeScriptCompile Include="Unit.ts" />
+    <TypeScriptCompile Include="UnitType.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\maps\small_preview.tmx" />
