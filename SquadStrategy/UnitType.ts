@@ -15,6 +15,8 @@
             this.name = name;
             this.frames = frames;
             this.weaponType = weaponType;
+
+            this.maxHP = 15;
         }
     }   
 

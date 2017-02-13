@@ -23,6 +23,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.css" />
+    <Content Include="assets\sprites\effects.png" />
     <Content Include="assets\sprites\roguelikeChar_transparent.png" />
     <Content Include="assets\sprites\UIpackSheet_transparent.png" />
     <Content Include="index.html" />
@@ -39,6 +40,7 @@
     <TypeScriptCompile Include="ControlPanel.ts" />
     <TypeScriptCompile Include="Game.ts" />
     <TypeScriptCompile Include="GameState.ts" />
+    <TypeScriptCompile Include="HealthBar.ts" />
     <TypeScriptCompile Include="lib\p2.d.ts" />
     <TypeScriptCompile Include="lib\phaser.d.ts" />
     <TypeScriptCompile Include="lib\pixi.d.ts" />
@@ -51,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\maps\small_preview.tmx" />
+    <Content Include="assets\sprites\effects.json" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
